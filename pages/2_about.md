@@ -9,13 +9,13 @@ permalink: /about/
 {:toc}
 
 ## About the site
-This is a personal website of LiXizhi, created with github and jekyll. 
-Create your own website is as easy as clone or fork a [template](https://github.com/LiXizhi/lixizhi.github.io) on github, and [commit](http://jekyllrb.com/docs/posts/) to `_posts` folder. 
+This is a personal website of h3ll0haro, created with github and jekyll. 
+Create your own website is as easy as clone or fork a [template](https://github.com/h3ll0haro/h3ll0haro.github.io) on github, and [commit](http://jekyllrb.com/docs/posts/) to `_posts` folder. 
 
 ### Admin tools
-* site [configuration file](https://github.com/LiXizhi/lixizhi.github.io/blob/master/_config.yml)
-* Jekyll + [lixizhi.duoshuo.com](http://lixizhi.duoshuo.com/admin/)
-* Jekyll + [lixizhi.disqus.com](http://lixizhi.disqus.com/admin/)
+* site [configuration file](https://github.com/h3ll0haro/h3ll0haro.github.io/blob/master/_config.yml)
+* Jekyll + [h3ll0haro.duoshuo.com](http://h3ll0haro.duoshuo.com/admin/)
+* Jekyll + [h3ll0haro.disqus.com](http://h3ll0haro.disqus.com/admin/)
 * Jekyll theme templates: [jekyllthemes.org](http://jekyllthemes.org)
    * Theme used: [cool-concise](http://jekyllthemes.org/themes/cool-concise-high-end/)
 * Jekyll official site: [jekyllrb.com](http://jekyllrb.com)
