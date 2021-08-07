@@ -2,7 +2,6 @@
 layout: frontpage
 ---
 
-## Welcome to my website
+## h3ll0haro 的博客
 
-This is the place where I share my ideas on topics like [Paracraft](http://www.paracraft.cn) software design, artificial intelligence and education. 
-Feel free to send me emails or join our team. 
+随时分享与安全相关的文章
