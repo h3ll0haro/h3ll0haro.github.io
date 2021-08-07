@@ -1,34 +1,37 @@
-# Site settings
-title: h3ll0haro's Personal Website
-email: h3ll0haro@gmail.com
-description: 3ll0haro Blogs
-# > # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
-
-# baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-github_username: h3ll0haro
-permalink: /:year/:month/:day/:title/
-# this is the url root of the view source link on the footer page.
-viewsourceroot: https://github.com/h3ll0haro/h3ll0haro.github.io/blob/master/
-# this is the url root of the create page link on the footer page.
-newsourceroot: https://github.com/h3ll0haro/h3ll0haro.github.io/new/master
-#########################################
-# for duoshuo.com commenting system, uncomment following line if you do not want to include duoshuo.com. 
-#duoshuo_shortname: h3ll0haro
-#duoshuo_url: "http://h3ll0haro.github.io"
-# disqus.com commenting system. please note that it is exclusive with duoshuo.com
-disqus_shortname: h3ll0haro
-disqus_url: "http://h3ll0haro.github.io"
-#########################################
-
-# Build settings
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
+highlights: pygments
+url: 
+cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+lsi: false
+safe: true
+timezone: Asia/Shanghai
+auto: false 
 
-# highlight
-# highlighter: pygments
-# highlighter: rouge
-# highlighter: false
+paginate: 8
+paginate_path: "page:num"
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+JB :
+  IMAGE_PATH : http://coolshell.info/images
+
+# presonal config
+domain: http://h3ll0haro.github.io
+title: h3ll0haro blog
+description: 个人博客
+author: h3ll0haro
+email: h3ll0haro@gmail.com
+github: h3ll0haro
+
+config:
+  js_dir:
+  img_dir:
+  css_dir:
