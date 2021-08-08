@@ -6,8 +6,6 @@ tags: 信息收集
 
 ---
 
-
-
 ## dirsearch使用
 
 dirsearch作为一款优秀的目录扫描工具，可自定义字典、后缀，并可根据目标情况排除返回状态码，返回大小等，帮助渗透测试者快速找到网站的敏感信息。安装地址：`git clone https://github.com/maurosoria/dirsearch.git`
