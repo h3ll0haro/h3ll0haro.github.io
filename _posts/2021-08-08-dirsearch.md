@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 目录扫描
+title: 目录扫描-dirsearch
 categories: web安全
 tags: 信息收集
 
