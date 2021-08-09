@@ -16,7 +16,7 @@ windows的身份认证机制主要有两种方式
 
 NTLM（NT LAN Manager）是windows中最常见的身份认证方式，主要有本地认证和网络认证两种情况
 
-### 本地认证
+### 0x01 本地认证
 
 在计算机本地认证中，当用户进行注销、重启、开机等需要认证的操作时，首先windows会调用winlogon.exe进程（也就是我们平常见到的登录框）接受用户的密码。之后密码会被传送给进程lsass.exe，该进程会先把明文密码存储到内存中，然后将加密后的密码也就是NTLM hash与windows本地的SAM数据库（%SystemRoot%\system32\config\SAM，词组security account manager，意思是安全账号管理器，其作用是对windows账户安全管理，类似于linux系统中的/etc/passwd文件,删除该文件即可删除账号密码。这也是PE破解系统密码的原理。）中该用户的NTLM Hash对比，如果一致则通过认证
 
@@ -28,7 +28,7 @@ NTLM Hash，正常的明文密码加密为NTLM Hash的方法：password -> 十�
 
 ![image-20210808192902599](https://cdn.jsdelivr.net/gh/h3ll0haro/img@master/uPic/image-20210808192902599.png)
 
-### 网络认证
+### 0x02 网络认证
 
 网络认证需要使用NTLM协议，改协议基于挑战(challenge)/响应(response)机制
 
@@ -42,7 +42,7 @@ NTLM Hash，正常的明文密码加密为NTLM Hash的方法：password -> 十�
 
 ![image-20210808193917246](https://cdn.jsdelivr.net/gh/h3ll0haro/img@master/uPic/image-20210808193917246.png)
 
-### 域环境中的网络认证
+### 0x03 域环境中的网络认证
 
 域环境虽然首选默认Kerberos认证，但是也可以使用NTLM来进行认证，其认证过程与工作组差异不大，区别主要是最终在域控DC中完成验证
 
@@ -60,6 +60,6 @@ NTLM Hash，正常的明文密码加密为NTLM Hash的方法：password -> 十�
 
 ![image-20210808194119733](https://cdn.jsdelivr.net/gh/h3ll0haro/img@master/uPic/image-20210808194119733.png)
 
-### NTLM 的缺陷
+### 0x04 NTLM 的缺陷
 
 用户的明文密码并没有在验证过程中出现，而是使用了密码的NTLM Hash，那么攻击者只要拿到了用户密码的NTLM Hash就可以冒充用户，使用复用凭证Hash进行攻击的方式，不需要解密明文密码就可以通过验证，这就是hash传递攻击(Pass the Hash)。
