@@ -5,7 +5,7 @@ categories: web安全
 tags: 信息收集
 ---
 
-## TheHarvester
+## TheHarvester使用
 
 `TheHarvester`能够收集电子邮件账号、用户名、主机名和子域名等信息。它通过Google、Bing、PGP、LinkedIn、Baidu、Yandex、People123、Jigsaw、Shodan等公开资源整理收集这些信息。
 
