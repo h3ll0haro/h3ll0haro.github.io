@@ -7,7 +7,7 @@ tags: 信息收集
 
 ## TheHarvester使用
 
-`TheHarvester`能够收集电子邮件账号、用户名、主机名和子域名等信息。它通过Google、Bing、PGP、LinkedIn、Baidu、Yandex、People123、Jigsaw、Shodan等公开资源整理收集这些信息。
+`TheHarvester`能够收集电子邮件账号、用户名、主机名和子域名等信息。它通过Google、Bing、PGP、LinkedIn、Baidu、Yandex、People123、Jigsaw、Shodan等公开资源整理收集这些信息。安装地址：`https://github.com/laramies/theHarvester`
 
 ### 0x01 命令参数
 
